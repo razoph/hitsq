@@ -1,0 +1,52 @@
+$dark: #000000;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.starrynight {
+	background-color: black;
+	background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.darkgrad {
+	background: red;
+	/* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(dimgrey, black);
+	/* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(dimgrey, black);
+	/* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(dimgrey, black);
+	/* For Firefox 3.6 to 15 */
+	    background: linear-gradient(dimgrey, black);
+	/* Standard syntax (must be last) */}
+.bgsplash {
+	background-color: black;
+	//background: url(https: //s3.amazonaws.com/ionic-io-static/JOoHb4cSBy64g9N2DjTK_SPLASH%20SCREEN%20WLLPAPER%20NEW%20LOGO%20ONLY.png) no-repeat center;
+	background-size: cover;
+}
+
+.bgimage {
+	//background: url(https: //s3.amazonaws.com/ionic-io-static/dDuDEGoPTjukT5Sh9ipU_SPLASH%20SCREEN%20WLLPAPER%20NEW.png) no-repeat center;
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+.bgdeco {
+	//background: url(https: //s3.amazonaws.com/ionic-io-static/4z0v0JscRwmjCqlO8Ygv_speaker-grill-closeup-texture-iphone-5-speaker-grill-closeup-texture-iphone-wallpaper-wallpapers-records-4.jpg) no-repeat center;
+	background-size: cover;
+	background-color: black;
+}
+
+.bgdark {
+	background-color: black;
+}
+
+.center {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+

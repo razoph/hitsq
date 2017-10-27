@@ -1,0 +1,38 @@
+<ion-view title="HITS.Q" id="page1" style="background-color:black">
+
+  <ion-content padding="true" class=" starrynight" ng-class="{'bgsplash':onesignalstatus==false}">
+    <center>
+
+      <div ng-hide="onesignalstatus==false">
+        <!--
+<div  style="margin-top:30px;font-family:monospace;font-size:20px;line-height:28px;opacity:0.25;color:white;background-color:#444444;">Service</div>
+<div  style="margin-top:10px;font-size:15px;line-height:23px;color:white">{{profile.coysrv}}</div>
+-->
+        <div style="margin-top:10px;font-family:helvetica;font-size:30px;line-height:28px;opacity:1;color:red;">Current Number:</div>
+        <div style="margin-top:10px;font-size:90px;line-height:108px;color:turquoise">{{data.message}}</div>
+        <!--
+<div  style="margin-top:30px;font-family:helvetica;font-size:30px;line-height:28px;opacity:1;color:white;">Counter Name</div>
+-->
+        <div style="margin-top:10px;font-size:30px;line-height:30px;color:turquoise">{{data.countername}}</div>
+        <div style="margin-top:30px;font-family:helvetica;font-size:30px;line-height:28px;opacity:1;color:yellow;">Your Number:</div>
+        <div style="margin-top:10px;font-size:30px;line-height:30px;color:yellow">{{profile.qno}}</div>
+        <p style="margin-top:10px;font-size:12px;color:#333333;">{{profile.qrcode}}
+          <br>{{profile.deviceid}}</p>
+
+      </div>
+    </center>
+  </ion-content>
+
+  <div class="bar bar-subfooter bar-dark" style="height:70px;opacity:0.5;" ng-hide="onesignalstatus==false">
+    <!-- <h1 class = "title">Your Number:&nbsp;{{profile.qno}}</h1>-->
+  </div>
+  <div class="bar bar-footer" style="height:80px;background-color:transparent !important;">
+
+    <button class="button button-assertive button-block" ng-click="beginScanQr()" on-hold="beginEnterQr()" ng-hide="onesignalstatus==false">
+      SCAN QR CODE
+    </button>
+
+    <p ng-hide="onesignalstatus==true">Waiting...</p>
+  </div>
+
+</ion-view>
